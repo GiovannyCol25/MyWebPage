@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandbook - Mi Empresa</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-primary-gradient: linear-gradient(135deg, #0d6efd, #000000);
+      --color-primary: #0d6efd;
+      --color-dark: #000000;
+      --color-accent: #ffca2c;
+      --color-accent-alt: #0dcaf0;
+      --color-light: #f8f9fa;
+      --color-text: #212529;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--color-light);
+      color: var(--color-text);
+    }
+    header {
+      background: var(--color-primary-gradient);
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+    h1 {
+      font-family: 'Montserrat', sans-serif;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .color-box {
+      display: inline-block;
+      width: 120px;
+      height: 120px;
+      margin: 10px;
+      border-radius: 10px;
+      color: white;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .primary { background: var(--color-primary); }
+    .dark { background: var(--color-dark); }
+    .accent { background: var(--color-accent); color: black; }
+    .accent-alt { background: var(--color-accent-alt); }
+    .light { background: var(--color-light); color: black; border: 1px solid #ccc; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nombre de tu Empresa</h1>
+    <p><em>Tecnología a tu medida</em></p>
+  </header>
+
+  <section>
+    <h2>🎯 Propuesta de valor</h2>
+    <p>
+      Creamos soluciones tecnológicas personalizadas, con creatividad e innovación, 
+      diseñadas para que tu negocio crezca y se diferencie en el mundo digital.
+    </p>
+  </section>
+
+  <section>
+    <h2>🎨 Paleta de colores</h2>
+    <div class="color-box primary">#0d6efd</div>
+    <div class="color-box dark">#000000</div>
+    <div class="color-box accent">#ffca2c</div>
+    <div class="color-box accent-alt">#0dcaf0</div>
+    <div class="color-box light">#f8f9fa</div>
+  </section>
+
+  <section>
+    <h2>🔤 Tipografía</h2>
+    <p style="font-family: 'Montserrat', sans-serif; font-size: 1.5rem;">Montserrat Bold → Títulos</p>
+    <p style="font-family: 'Roboto', sans-serif;">Roboto Regular → Texto de párrafos</p>
+  </section>
+
+  <footer style="text-align:center; padding: 1rem; background: #eee;">
+    <p>© 2025 Nombre de tu Empresa</p>
+  </footer>
+
+</body>
+</html>
