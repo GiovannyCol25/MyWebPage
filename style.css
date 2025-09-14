@@ -8,7 +8,6 @@ body{
     color: var(--color-text);
     position: relative;
     text-align: center;
-    padding-top: 230px; /* Espacio para el header fijo */
 }
 
 header {
@@ -16,7 +15,7 @@ header {
   color: white;
   text-align: center;
   padding: 2rem 1rem;
-  position: fixed;
+  position: sticky;
   top: 0;             /* Se pega arriba */
   left: 0;            /* Alineado al borde izquierdo */
   width: 100%;        /* Que ocupe todo el ancho */
