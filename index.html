@@ -1,15 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="keywords" content="Gio Software Solutions, desarrollo web, soluciones digitales, aplicaciones web, SEO, mantenimiento técnico" />
-    <meta name="description" content="Gio Software Solutions ofrece servicios de desarrollo web, aplicaciones personalizadas, optimización SEO y soporte técnico." />
-    <meta name="author" content="Gio Software Solutions" />
+    <meta name="keywords" content="desarrollo web, páginas web profesionales, aplicaciones web, soporte técnico, diseño web moderno" />
+    <meta name="description" content="Creamos sitios web y aplicaciones que hacen crecer tu negocio. Servicio rápido, confiable y accesible." />
+    <meta name="author" content="GIO Software Solutions" />
+    
+    <!-- Open Graph (para redes sociales) -->
+    <meta property="og:title" content="GIO Software Solutions - Desarrollo Web Profesional" />
+    <meta property="og:description" content="Creamos sitios web y aplicaciones que hacen crecer tu negocio. Diseño moderno, desarrollo rápido, soporte garantizado." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://giovannycol25.github.io/" />
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EENTNQM309"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-EENTNQM309');
+    </script>
+
+    <!-- Datos estructurados (Schema.org) para Google -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "GIO Software Solutions",
+      "description": "Desarrollo web profesional y aplicaciones personalizadas",
+      "url": "https://giovannycol25.github.io/",
+      "telephone": "",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CO"
+      },
+      "sameAs": [
+        "https://www.linkedin.com/in/giovanny-capera-518580141/",
+        "https://github.com/GiovannyCol25"
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=family_star" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia&effect=fire">
-    <title>GIO Software Solutions</title>
+    <title>GIO Software Solutions | Desarrollo Web Profesional</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -28,84 +64,184 @@
         </nav>
     </header>
     <!-- Sección: Sobre nosotros -->
-    <div>
-      <section>
-          <h2>Sobre Nosotros</h2>
-          <p>
-            Creamos soluciones tecnológicas personalizadas, 
-            con creatividad e innovación, diseñadas para que 
-            tu negocio crezca y se diferencie en el mundo digital.
-          </p>
-          <h3>Misión</h3>
-          <p>
-            Nuestra misión es ofrecer servicios de alta calidad 
-            en desarrollo web, aplicaciones personalizadas, 
-            y soporte técnico, adaptándonos a las necesidades específicas 
-            de cada cliente.
-          </p>
-          <h3>Visión</h3>
-          <p>
-            Ser reconocidos como líderes en el sector tecnológico, 
-            destacándonos por nuestra innovación, compromiso con la calidad, 
-            y la satisfacción total de nuestros clientes.
-          </p>
-      </section>
-    </div>
+    <section id="sobre" class="about-section">
+      <h2>¿Quiénes Somos?</h2>
+      <p class="intro-text">
+        En <strong>GIO Software Solutions</strong> entendemos que tu negocio necesita presencia digital profesional. 
+        No te vendemos código complicado, te vendemos <strong>resultados</strong>: más clientes, mejor imagen y presencia en línea.
+      </p>
+      
+      <div class="values-container">
+        <div class="value-card">
+          <h3>🎯 Nuestro Enfoque</h3>
+          <p>No creamos sitios web bonitos que nadie ve. Creamos sitios que tus clientes encuentran y que los convierten en ventas.</p>
+        </div>
+        <div class="value-card">
+          <h3>⚡ Rápido & Confiable</h3>
+          <p>Tu sitio cargará rápido, funcionará sin problemas, y estaremos aquí para soportarte cuando lo necesites.</p>
+        </div>
+        <div class="value-card">
+          <h3>💬 Comunicación Clara</h3>
+          <p>Te explicamos todo en lenguaje simple. Sin tecnicismos innecesarios, solo resultados que puedas entender.</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Sección: Servicios -->
-    <section id="servicios">
-        <h2>Servicios</h2>
-        <ul>
-            <li>Diseño y desarrollo de páginas web</li>
-            <li>Aplicaciones web personalizadas</li>
-            <li>Optimización SEO</li>
-            <li>Mantenimiento y soporte técnico</li>
-            <li>Consultoría tecnológica</li>
-            <li>Bases de datos relacionales</li>
-            <li>Integración de APIs</li>
-            <li>Desarrollo Frontend y Backend</li>
-        </ul>
+    <section id="servicios" class="services-section">
+        <h2>¿Qué Podemos Hacer Por Ti?</h2>
+        <p class="section-subtitle">Soluciones digitales que crecen con tu negocio</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🌐</div>
+                <h3>Sitios Web Profesionales</h3>
+                <p>Tu tarjeta de presentación en línea. Sitios modernos, rápidos y que generan confianza en tus clientes.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">📱</div>
+                <h3>Responsive & Mobile</h3>
+                <p>Tu sitio se verá perfecto en celular, tablet y computadora. Tus clientes pueden verte desde cualquier lugar.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🔍</div>
+                <h3>Google Me Encuentra</h3>
+                <p>Optimizamos tu sitio para que aparezca en Google cuando buscan lo que ofreces. Más visitas = Más clientes.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">⚙️</div>
+                <h3>Aplicaciones Web</h3>
+                <p>Si necesitas algo más complejo: sistemas de pedidos, reservas, o gestión interna. Lo creamos a tu medida.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🛠️</div>
+                <h3>Soporte Técnico</h3>
+                <p>¿Algo no funciona? Te lo arreglamos. Mantenimiento, actualizaciones y soporte cuando lo necesites.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🚀</div>
+                <h3>Mejora Tu Presencia</h3>
+                <p>Análisis, asesoría y mejoras continuas. Hacemos que tu sitio no solo exista, sino que trabaje para ti.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">🗄️</div>
+                <h3>Organiza Tu Información</h3>
+                <p>¿Clientes, pedidos, inventario dispersos en archivos? Creamos un sistema para guardar y organizar toda tu información de forma segura y fácil de encontrar.</p>
+            </div>
+        </div>
     </section>
 
     <!-- Sección: Proyectos -->
-    <section id="proyectos">
-      <h2>Proyectos</h2>
-        <h3>Encriptador de texto</h3>
-        <p>Este fue el primer proyecto desarrollado en el primer reto
-          cursado en One con Alura y Oracle del programa next Education.</p>
-          <a href="https://giovannycol25.github.io/Encriptador1/" target="_blank" rel="noopener noreferrer">Ver proyecto</a>
-        <!-- Ejemplo de proyecto -->
-        <article>
-            
-            <p>El encriptador de texto es una web app con dos funcionalidades
-              en la cual tu puedes escribir un mensaje o palabra para ser encriptada 
-              o desencriptada según la necesidad.</p>
-        </article>
+    <section id="proyectos" class="projects-section">
+      <h2>Proyectos Realizados</h2>
+      <p class="section-subtitle">Ejemplos de lo que hemos creado</p>
+      
+      <div class="projects-grid">
+        <div class="project-card">
+            <div class="project-header">
+                <h3>🔐 Encriptador de Texto</h3>
+                <span class="project-date">2024</span>
+            </div>
+            <p class="project-description">
+                Una herramienta útil y segura para proteger tus mensajes. Escribe lo que quieras, encripta tu mensaje, 
+                y comparte el código con seguridad. Perfecto para comunicaciones privadas.
+            </p>
+            <div class="project-features">
+                <span class="feature">✓ Encriptar</span>
+                <span class="feature">✓ Desencriptar</span>
+                <span class="feature">✓ Interfaz Simple</span>
+            </div>
+            <a href="https://giovannycol25.github.io/Encriptador1/" target="_blank" rel="noopener noreferrer" class="btn-project">Ver Proyecto</a>
+        </div>
+        
+        <div class="project-card">
+            <div class="project-header">
+                <h3>📊 Portfolio Profesional</h3>
+                <span class="project-date">2025</span>
+            </div>
+            <p class="project-description">
+                Este sitio mismo es un ejemplo. Diseñado para atraer clientes, mostrar proyectos y convertir visitantes en clientes.
+                Moderno, rápido y optimizado para Google.
+            </p>
+            <div class="project-features">
+                <span class="feature">✓ Diseño Responsivo</span>
+                <span class="feature">✓ Analytics</span>
+                <span class="feature">✓ SEO Optimizado</span>
+            </div>
+            <a href="#contacto" class="btn-project">Solicitar Similar</a>
+        </div>
+      </div>
+      
+      <div class="cta-projects">
+          <p><strong>¿Tienes un proyecto en mente?</strong> Cuéntanos qué necesitas y hacemos realidad tu idea digital.</p>
+          <a href="#contacto" class="btn-primary">Empecemos Ahora</a>
+      </div>
     </section>
 
     <!-- Sección: Contacto -->
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <form id="contacto", action="https://formspree.io/f/xnnbryrj" method="POST">
-            <label>Nombre:</label><br>
-            <input type="text" name="nombre" required><br><br>
-            <label>Correo:</label><br>
-            <input type="email" name="correo" required><br><br>
-            <label>Mensaje:</label><br>
-            <textarea name="mensaje" rows="5" required></textarea><br><br>
-            <button type="submit">Enviar</button>
+    <section id="contacto" class="contact-section">
+        <h2>¿Listo Para Crecer?</h2>
+        <p class="contact-subtitle">Cuéntanos tu idea y hacemos que suceda</p>
+        
+        <form id="contactForm" action="https://formspree.io/f/xnnbryrj" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Tu Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan García" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="correo">Tu Correo</label>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="asunto">¿Qué necesitas?</label>
+                <select id="asunto" name="asunto" required>
+                    <option value="">Selecciona una opción</option>
+                    <option value="Sitio Web">Sitio web nuevo</option>
+                    <option value="Aplicación Web">Aplicación web</option>
+                    <option value="Mantenimiento">Arreglar/mejorar mi sitio</option>
+                    <option value="Asesoría">Solo asesoría</option>
+                    <option value="Otro">Otro</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="mensaje">Cuéntanos tu idea</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="¿Qué quieres lograr con tu sitio web?" required></textarea>
+            </div>
+            
+            <button type="submit" class="btn-submit">Enviar Mi Solicitud</button>
+            <p class="form-note">Responderemos en menos de 24 horas</p>
         </form>
     </section>
     <!-- Pie de página -->
     <footer>
       <p>© 2025 GIO Software Solutions - Todos los derechos reservados</p>
-      <div class="social-links">
-        <a href="https://www.linkedin.com/in/giovanny-capera-518580141/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-linkedin"></i>
-        </a>
-        <a href="https://github.com/GiovannyCol25" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-github"></i>
-        </a>
+      
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/giovanny-capera-518580141/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="https://github.com/GiovannyCol25" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+        
+        <div class="privacy-notice">
+          <p class="privacy-text">
+            Este sitio utiliza <strong>Google Analytics</strong> para analizar cómo los visitantes interactúan con nuestro contenido. 
+            Esto nos ayuda a mejorar nuestros servicios. Si prefieres no ser rastreado, puedes desactivar JavaScript en tu navegador.
+            <a href="#privacy-details" class="privacy-link">Más información</a>
+          </p>
+        </div>
       </div>
     </footer>
 
