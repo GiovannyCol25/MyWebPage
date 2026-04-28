@@ -6,12 +6,18 @@
     <meta name="keywords" content="desarrollo web, páginas web profesionales, aplicaciones web, soporte técnico, diseño web moderno" />
     <meta name="description" content="Creamos sitios web y aplicaciones que hacen crecer tu negocio. Servicio rápido, confiable y accesible." />
     <meta name="author" content="GIO Software Solutions" />
+    <link rel="canonical" href="https://giovannycol25.github.io/" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.jsdelivr.net; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; img-src 'self' data: https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://www.google-analytics.com https://region1.google-analytics.com https://formspree.io; form-action https://formspree.io; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests" />
+    <meta name="referrer" content="strict-origin-when-cross-origin" />
+    <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()" />
     
     <!-- Open Graph (para redes sociales) -->
     <meta property="og:title" content="GIO Software Solutions - Desarrollo Web Profesional" />
     <meta property="og:description" content="Creamos sitios web y aplicaciones que hacen crecer tu negocio. Diseño moderno, desarrollo rápido, soporte garantizado." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://giovannycol25.github.io/" />
+    <meta property="og:site_name" content="GIO Software Solutions" />
+    <meta property="og:locale" content="es_CO" />
     
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EENTNQM309"></script>
@@ -54,14 +60,27 @@
   </head>
   <body>
     <header>
-      <h1 id="tituloPagina" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">GIO SOFTWARE SOLUTIONS</h1>
-      <p>Desarrollo Web y soluciones digitales para tu negocio</p>
+      <div class="header-shell">
+        <span class="hero-badge">Soluciones web para pymes y negocios en crecimiento</span>
+        <h1 id="tituloPagina" style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">GIO SOFTWARE SOLUTIONS</h1>
+        <p class="hero-copy">Creamos sitios web, demos y aplicaciones que proyectan profesionalismo, generan confianza y convierten visitas en oportunidades reales de negocio.</p>
+        <div class="hero-actions">
+          <a href="#proyectos" class="hero-btn hero-btn-primary">Ver Proyectos</a>
+          <a href="#contacto" class="hero-btn hero-btn-secondary">Solicitar Cotización</a>
+          <a href="https://demo-pymes.vercel.app" target="_blank" rel="noopener noreferrer" class="hero-btn hero-btn-tertiary">Abrir Demo SaaS</a>
+        </div>
+        <div class="hero-proof">
+          <span>Diseño responsive</span>
+          <span>SEO técnico</span>
+          <span>Integración con formularios y analytics</span>
+        </div>
         <nav>
             <a href="#sobre">Sobre Nosotros</a>
             <a href="#servicios">Servicios</a>
             <a href="#proyectos">Proyectos</a>
             <a href="#contacto">Contacto</a>
         </nav>
+      </div>
     </header>
     <!-- Sección: Sobre nosotros -->
     <section id="sobre" class="about-section">
@@ -166,15 +185,15 @@
                 <span class="project-date">2025</span>
             </div>
             <p class="project-description">
-                Este sitio mismo es un ejemplo. Diseñado para atraer clientes, mostrar proyectos y convertir visitantes en clientes.
-                Moderno, rápido y optimizado para Google.
+                Este portafolio demuestra cómo una presencia digital bien ejecutada puede fortalecer tu marca, generar confianza y convertir visitas en oportunidades comerciales.
+                Diseñado con enfoque profesional, alto rendimiento y optimización para Google.
             </p>
             <div class="project-features">
                 <span class="feature">✓ Diseño Responsivo</span>
                 <span class="feature">✓ Analytics</span>
                 <span class="feature">✓ SEO Optimizado</span>
             </div>
-            <a href="#contacto" class="btn-project">Solicitar Similar</a>
+            <a href="https://demo-pymes.vercel.app" target="_blank" rel="noopener noreferrer" class="btn-project">Ver Demo en Vivo</a>
         </div>
       </div>
       
@@ -190,14 +209,15 @@
         <p class="contact-subtitle">Cuéntanos tu idea y hacemos que suceda</p>
         
         <form id="contactForm" action="https://formspree.io/f/xnnbryrj" method="POST" class="contact-form">
+            <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" class="hp-field" aria-hidden="true">
             <div class="form-group">
                 <label for="nombre">Tu Nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Juan García" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Juan García" autocomplete="name" required>
             </div>
             
             <div class="form-group">
                 <label for="correo">Tu Correo</label>
-                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required>
+                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" autocomplete="email" required>
             </div>
             
             <div class="form-group">

@@ -1,103 +1,67 @@
-import Image from "next/image";
+import Link from "next/link";
+
+const demoHighlights = [
+  "Gestion de compras, ventas e inventario en una sola plataforma.",
+  "Interfaz clara para equipos pequenos y medianas empresas.",
+  "Base ideal para una implementacion SaaS personalizada.",
+];
 
 export default function Home() {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <main className="min-h-screen bg-slate-950 text-white">
+      <section className="mx-auto flex max-w-5xl flex-col gap-10 px-6 py-20 md:px-10">
+        <div className="inline-flex w-fit rounded-full border border-emerald-400/30 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-200">
+          Demo funcional desplegada en Vercel
+        </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
+        <div className="max-w-3xl">
+          <h1 className="text-4xl font-semibold leading-tight md:text-6xl">
+            Software para pymes con enfoque en operacion, control y crecimiento.
+          </h1>
+          <p className="mt-6 text-lg leading-8 text-slate-300">
+            Esta demo presenta una base moderna para digitalizar procesos clave de una pyme:
+            compras, ventas, inventario y reportes, con una experiencia agil y lista para
+            evolucionar segun las necesidades del negocio.
+          </p>
+        </div>
+
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <Link
+            href="/demo"
+            className="rounded-full bg-emerald-500 px-6 py-3 text-center font-medium text-white transition hover:bg-emerald-400"
+          >
+            Ver recorrido de la demo
+          </Link>
           <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://demo-pymes.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
+            className="rounded-full border border-white/20 px-6 py-3 text-center font-medium text-white transition hover:border-white/40 hover:bg-white/5"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
+            Abrir aplicacion en vivo
           </a>
           <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            href="https://giovannycol25.github.io/#contacto"
             target="_blank"
             rel="noopener noreferrer"
+            className="rounded-full border border-sky-400/30 px-6 py-3 text-center font-medium text-sky-200 transition hover:border-sky-300/50 hover:bg-sky-400/10"
           >
-            Read our docs
+            Solicitar una version similar
           </a>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+        <div className="grid gap-4 md:grid-cols-3">
+          {demoHighlights.map((item) => (
+            <article
+              key={item}
+              className="rounded-3xl border border-white/10 bg-white/5 p-6 text-slate-200"
+            >
+              <h2 className="mb-3 text-lg font-semibold text-white">Valor para negocio</h2>
+              <p className="leading-7">{item}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+    </main>
   );
 }

@@ -14,12 +14,13 @@ header {
   background: var(--color-primary-gradient);
   color: white;
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 2.5rem 1rem 2rem;
   position: sticky;
   top: 0;             /* Se pega arriba */
   left: 0;            /* Alineado al borde izquierdo */
   width: 100%;        /* Que ocupe todo el ancho */
-  z-index: 1000; 
+  z-index: 1000;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
 #contacto {
@@ -69,6 +70,82 @@ body::before {
 header p {
   margin-top: 0.5rem;
   font-size: 1.2rem;
+}
+
+.header-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.45rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  font-size: 0.9rem;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.hero-copy {
+  max-width: 760px;
+  margin: 1rem auto 0;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.8rem;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 0.9rem 1.4rem;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.hero-btn:hover {
+  transform: translateY(-2px);
+}
+
+.hero-btn-primary {
+  background: var(--color-accent);
+  color: #111;
+  box-shadow: 0 10px 25px rgba(255, 202, 44, 0.25);
+}
+
+.hero-btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.hero-btn-tertiary {
+  background: rgba(13, 202, 240, 0.15);
+  color: #dffbff;
+  border: 1px solid rgba(13, 202, 240, 0.35);
+}
+
+.hero-proof {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1.4rem;
+}
+
+.hero-proof span {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  font-size: 0.92rem;
 }
 
 nav {
@@ -355,6 +432,14 @@ ul li::before {
   gap: 1.5rem;
 }
 
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
 .form-group {
   display: flex;
   flex-direction: column;
@@ -499,4 +584,27 @@ footer p {
 
 .social-links a:hover {
   color: var(--color-accent);
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 2rem 1rem 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-copy {
+    font-size: 1rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-btn {
+    width: 100%;
+  }
 }
